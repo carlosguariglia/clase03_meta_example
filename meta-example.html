@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <title>"Que hay en el &lt;head&gt;?"</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Meta examples</title>
 
     <meta name="author" content="Carlos Ignacio Guariglia" />
     <meta
       name="description"
-      content="This is an example page to demonstrate usage of metadata on web pages."
+      content="Esta es una pagina con ejemplos de uso de meta y su explicacion"
     />
 
     <meta
@@ -26,16 +26,68 @@
 
     <link
       rel="Shortcut Icon"
-      href="aperturacierrehtml.ico"
+      href="/imagenes/favicon.ico"
       type="image/x-icon"
     />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Meta examples</h1>
+    <h1>"¿Que hay en el &lt;head&gt;?"</h1>
+    <!-- Usando los caracteres &lt; para < &gt; para > podemos agregar encabezados sin que html los tome como tales. -->
 
-    <p>Japanese example: ご飯が熱い。</p>
+    <p>
+      Empecemos por: <br /><br />
+
+      <strong>&lt;title&gt;Titulo de nuestra pagina&lt;/title&gt;</strong>
+      Esta linea es para poner el titulo de nuestra pagina y es lo que se vera
+      en la pestaña, esta junto al icono si lo agregamos son los unicos datos
+      que se declararan en el head de la pagina que podra visualizarse
+    </p>
+
+    <h1>Ejemplos de uso de meta</h1>
+
+    <p>
+      <strong> &lt;meta charset="utf-8" /&gt;</strong><br />
+      Esta linea nos asegura que cualquier caracter especial que tenga nuestra
+      pagimna web sera correctamente mostrada. Por ejemplo:<br />
+      Estas Letras en Japones: ご飯が熱い。
+    </p>
+
+    <p>
+      <strong>
+        &lt;meta name="author" content="Carlos Ignacio Guariglia"/&gt; </strong
+      ><br />
+      Esta linea nos ayuda a dar informacion del autor de nuestra pagina web.
+    </p>
+
+    <p>
+      <strong>
+        &lt;meta name="description" content="Esta es una pagina con ejemplos de
+        uso de meta y su explicacion"/&gt; </strong
+      ><br />
+      Esta linea nos ayuda a dar informacion de nuestra pagina web.
+    </p>
+
+    <h3>
+      Tambien agregamos enlaces a paginas css o iconos para representar la
+      pagina
+    </h3>
+    <p>
+      <strong>
+        &lt;link rel="Shortcut Icon" href="/imagenes/favicon.ico"
+        type="image/x-icon"/&gt;
+      </strong>
+      <br />
+      Aca agregamos un icono de 32x32 aproximadamente en formato .ICO que sera
+      mostrado junto al Titulo de la pagina
+    </p>
+
+    <p>
+      <strong>&lt; link rel="stylesheet" href="style.css" /&gt</strong>
+      <br />
+      Aca "enlazamos" nuestro archivo CSS que tendra el estilo de la pagina
+    </p>
 
     <ul>
       <li>Huevos</li>
@@ -43,10 +95,10 @@
       <li>Leche</li>
       <li>Cereales</li>
     </ul>
-    <p>Creditos:</p>
+    <!-- <p>Creditos:</p>
     <a href="https://www.flaticon.es/iconos-gratis/html" title="html iconos"
       >Html iconos creados por justicon - Flaticon</a
-    >
+    > -->
   </body>
 
   <!-- <script src="script.js"></script> -->
