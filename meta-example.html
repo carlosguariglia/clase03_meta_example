@@ -1,28 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="es-AR"></html>
+  <!-- Es para especificar el lenguage de la pagina en-US Ingles Estados Unidos, es-AR español Argentina -->
   <head>
     <title>"Que hay en el &lt;head&gt;?"</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-
     <meta name="author" content="Carlos Ignacio Guariglia" />
-    <meta
-      name="description"
-      content="Esta es una pagina con ejemplos de uso de meta y su explicacion"
-    />
-
-    <meta
-      property="og:image"
-      content="https://developer.mozilla.org/mdn-social-share.png"
-    />
-    <meta
-      property="og:description"
-      content="This is an example page to demonstrate usage of metadata on web pages."
-    />
-    <meta
-      property="og:title"
-      content="Metadata; The HTML &lt;head&gt;, on MDN"
-    />
+    <meta name="description" content="Esta es una pagina con ejemplos de uso de meta y su explicacion" />
+    
 
     <link
       rel="Shortcut Icon"
@@ -31,17 +16,19 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- Al agregar defer en el script, se cargara el script de forma asincrona. -->
   </head>
   <body>
     <h1>"¿Que hay en el &lt;head&gt;?"</h1>
     <!-- Usando los caracteres &lt; para < &gt; para > podemos agregar encabezados sin que html los tome como tales. -->
 
     <p>
-      Empecemos por: <br /><br />
+      <h3>Empecemos por:</h3> <br />
 
       <strong>&lt;title&gt;Titulo de nuestra pagina&lt;/title&gt;</strong>
       Esta linea es para poner el titulo de nuestra pagina y es lo que se vera
-      en la pestaña, esta junto al icono si lo agregamos son los unicos datos
+      en la pestaña. Este titulo junto al icono, si lo agregamos, son los unicos datos
       que se declararan en el head de la pagina que podra visualizarse
     </p>
 
@@ -68,7 +55,14 @@
       ><br />
       Esta linea nos ayuda a dar informacion de nuestra pagina web.
     </p>
+    <p>
+      <strong>
+        &lt;meta name="viewport" content="width=device-width"/&gt; </strong
+        ><br />
+        Se utiliza para controlar la presentación y el comportamiento de una página web en diferentes dispositivos y tamaños de pantalla.
 
+        En particular, la propiedad width=device-width establece el ancho del viewport (la zona visible de la página) al ancho del dispositivo del usuario. Esto permite que la página se adapte al tamaño de la pantalla del dispositivo
+    </p>
     <h3>
       Tambien agregamos enlaces a paginas css o iconos para representar la
       pagina
@@ -89,6 +83,23 @@
       Aca "enlazamos" nuestro archivo CSS que tendra el estilo de la pagina
     </p>
 
+    <p>
+      <strong>&lt;script src="script.js" defer /&gt</strong>
+      <br />
+      Aca "enlazamos" nuestro archivo JS que tendra el script de la pagina. Al agregar defer en el script, se cargara el script de forma asincrona.
+    
+    </p><br>
+    <h3>Por ultimo antes del head se puede agregar lo siguiente:</h3>
+
+
+    <p> <strong>&lt;html lang="es-AR"/html&gt;</strong>
+      <br />
+      Es para especificar el lenguage de la pagina, por ejemplo: en-US Ingles Estados Unidos, es-AR español Argentina
+    </p>
+    
+    <br><br>
+    
+
     <ul>
       <li>Huevos</li>
       <li>Pan</li>
@@ -100,6 +111,4 @@
       >Html iconos creados por justicon - Flaticon</a
     > -->
   </body>
-
-  <!-- <script src="script.js"></script> -->
 </html>
